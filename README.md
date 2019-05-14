@@ -9,12 +9,13 @@ Online recruitment system is a platform to hold all the process of the employmen
 ### Admin Module
 
  + Quản lí user
- + Quản lí job seekers, skill
+ + Quản lí job seekers, skill, sub skill,...
  + Quản lí employers
- + Quản lí Jobs, Job Category
- + Quản lí payment ( hệ thống điểm hoặc giới hạn số lượng REQUISITION )
+ + Quản lí Jobs, Job Category, sub category, etc
+ + Quản lí payment, package ( hệ thống điểm hoặc giới hạn số lượng REQUISITION )
  + Quản lí Job Applications
  + Report
+ + Feedback
  
 ### Job Seeker Module
 
@@ -22,6 +23,7 @@ Online recruitment system is a platform to hold all the process of the employmen
  + Profile 
  + Resume (skill, timeline, etc)
  + Applications history
+ + Feedback
  
 ### Employer Module
  + Login and signup
@@ -30,6 +32,7 @@ Online recruitment system is a platform to hold all the process of the employmen
  + Applications manager
  + Profile
  + Payment
+ + Feedback
 
 ## ER Diagrams
 
@@ -65,6 +68,7 @@ Maintainability and reliability if the system is kept very thoroughly as all the
 
 ## Promising Features:
 
+ + Mailing
  + Khóa học, Chứng chỉ
  + Blogs
  + INTERVIEW: Tạo bộ câu hỏi để interview job seeker
