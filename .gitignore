@@ -1,1 +1,4 @@
 /front_end/.next/*
+/front_end/.next
+/front_end/node_modules
+/front_end/node_modules/*
