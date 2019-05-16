@@ -103,23 +103,35 @@ Link: https://www.ittjobs.com/index.php?show_login=1
 
 ## Technology
 
-+ UI server: nextjs 
+### UI server: nextjs 
 
  - Superior Performance: On slower devices, rendering an initial page can take a long time and lead to a degraded experience. By offloading the computation to a more powerful server, you minimize the time users spend waiting and ensure your conversion rate does not suffer.
  - Optimized for Discovery: SSR guarantees your pages are easily indexable by search engines and previewable on social media platforms. Client-side routing solutions can delay web crawling and in turn, tarnish discoverability. Take your SEO to the next level and sidestep the issue entirely with Next.js.
  - Lightning Fast Delivery: Prefetching initial data and building pages on the server drastically reduces the number of round trips required to view your site. This translates to lower latency and reduced bandwidth consumption. Both of which are essential for strong mobile experiences.
  - Infinitely Scalable: When it comes to dynamic applications, scalability is often a concern. Fortunately, Next.js supports serverless builds out of the box. Simply set the target and Next.js will output an SSR-equipped lambda for each page which can be instantly deployed to platforms like Now 2.0.
 
-+ Api server: nodejs + (express or restify)
+### Api server: nodejs + (express or restify)
   - It is asynchronous and event Driven
   - Fast
   - Single Threaded but Highly Scalable
   - No Buffering
-+ Database: 
+### Database: 
 
  - MariaDB includes a wide selection of storage engines, including high-performance storage engines, for working with other RDBMS data sources
  - MariaDB uses a standard and popular querying language.
  - Capable to handle advance search feature
  - MariaDB also offers many operations and commands unavailable in MySQL, and eliminates/replaces features impacting performance negatively
  - MariaDB runs on a number of operating systems and supports a wide variety of programming languages.
+
+## DEV
+
+```
+cd docker
+docker-compose up -d 
+```
+
+API: localhost:4000
+DATABASE: localhost:3306
+DATABASE ADMINER: localhost:8080
+FRONT UI: localhost
 
