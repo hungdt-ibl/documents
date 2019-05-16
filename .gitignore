@@ -1,4 +1,4 @@
-/front_end/.next/*
-/front_end/.next
-/front_end/node_modules
-/front_end/node_modules/*
+/source/front_end/.next/*
+/source/front_end/.next
+/source/front_end/node_modules
+//sourcefront_end/node_modules/*
