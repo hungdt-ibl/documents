@@ -1,0 +1,46 @@
+version: '3.3'
+services:
+  web:
+    container_name: "web"
+    image: "node:latest"
+    user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - ../source/front_end:/home/node/app
+    ports:
+      - 3000:3000
+    command: "npm run dev"
+  api: 
+    container_name: "api"
+    image: "node:latest"
+    user: "node"
+    depends_on:
+      - db
+    working_dir: /home/node/app
+    volumes:
+      - ../source/api:/home/node/app
+    ports:
+      - 4000:4000
+    command: "npm start"
+  # docker exec -it db bash -l
+  db:
+    container_name: "db"
+    image: mariadb
+    restart: always
+    working_dir: /home/
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_DATABASE: db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: pass
+    volumes:
+      - ./database:/home/
+    ports:
+      - 3306
+    # command: ["cp setup.sql ../docker-entrypoint-initdb.d/"]
+  adminer:
+    container_name: "adminer"
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
